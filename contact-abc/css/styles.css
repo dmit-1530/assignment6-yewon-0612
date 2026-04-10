@@ -41,23 +41,117 @@ header {
 
 form {
     background-color: var(--white);
-    border-radius: 8px;
     padding: .75rem 1rem;
     flex-basis: 0;
     flex-grow: 999;
     min-inline-size: 16rem;
 }
 
-form div {
+form label:not(input[type="radio"] + label, input[type="checkbox"] + label) {
+    display: block;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    line-height: 1.5;
+}
+
+form input:not([type="radio"], [type="checkbox"], [type="submit"]),
+select,
+textarea {
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+    height: 3.3125rem;
+    width: 100%;
     margin-bottom: 2rem;
+}
+
+form fieldset:nth-of-type(2) div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+fieldset label {
+    border: 1px solid var(--gray);
+    padding: .75rem 1rem;
+    text-align: center;
+    border-radius: .5rem;
+    margin-bottom: 2.5rem;
+}
+
+form fieldset:nth-of-type(2) label {
+    cursor: pointer;
+    flex-grow: 1;
+    flex-basis: calc((41.625rem - 100%) * 999);
+    min-inline-size: min(100%, 16rem);
+    max-inline-size: 100%;
+    white-space: nowrap;
+}
+
+form textarea {
+    max-height: 16rem;
+    min-height: 16rem;
+    resize: vertical;
+}
+
+fieldset>div {
+    margin-bottom: 1.125rem;
 }
 
 fieldset {
     border: none;
+    color: #666;
+    margin-bottom: 2rem;
     padding: 0;
 }
 
-fieldset label {
-    display: block;
-    margin-bottom: 2.5rem;
+
+span {
+    margin-right: 1rem;
+}
+
+
+
+fieldset label:has(input[type="radio"]:checked) {
+    background-color: var(--hover);
+    color: #fff;
+}
+
+
+input[type="submit"] {
+    background-color: var(--material-blue);
+    border: none;
+    border-radius: 16px;
+    color: #fff;
+    cursor: pointer;
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+     box-shadow: var(--box-shadow);
+    width: 100%;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+input[type="submit"]:hover {
+
+    background-color: var(--hover);
+    letter-spacing: 2px;
+}
+
+@media (min-width: 960px) {
+    .container {
+        display: flex;
+        gap: 40px;
+    }
+
+    header {
+        flex: 0 0 30%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding: 0;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
