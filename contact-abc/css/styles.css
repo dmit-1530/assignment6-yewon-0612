@@ -131,6 +131,10 @@ input[type="submit"]:hover {
         gap: 2.5rem;
         margin: 3rem 0;
     }
+    
+    h2 {
+        margin-top: 0;
+    }
 
     header {
         flex: 0 0 30%;
