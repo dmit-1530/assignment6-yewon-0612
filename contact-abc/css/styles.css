@@ -65,7 +65,7 @@ textarea {
     margin-bottom: 2rem;
 }
 
-form fieldset:nth-of-type(2) div {
+form fieldset div {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -79,11 +79,11 @@ fieldset label {
     margin-bottom: 2.5rem;
 }
 
-form fieldset:nth-of-type(2) label {
+form fieldset label {
     cursor: pointer;
     flex-grow: 1;
-    flex-basis: calc((41.625rem - 100%) * 999);
-    min-inline-size: min(100%, 16rem);
+    flex-basis: calc((20rem - 100%) * 999);
+    min-inline-size: min(100%, 12.085rem);
     max-inline-size: 100%;
     white-space: nowrap;
 }
@@ -126,18 +126,18 @@ input[type="submit"]:hover {
     background-color: var(--dark-orange);
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1200px) {
     .container {
         display: flex;
         gap: 40px;
     }
-
+    
     header {
         flex: 0 0 30%;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1560px) {
     .container {
         padding: 0;
         max-width: 1200px;
