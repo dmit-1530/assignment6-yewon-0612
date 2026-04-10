@@ -1,5 +1,6 @@
 :root {
     --orange: #CB4E0B;
+    --dark-orange: #C2410C;
     --white: #FFFFFF;
     --gray: #C1C4C8
 }
@@ -93,48 +94,36 @@ form textarea {
     resize: vertical;
 }
 
-fieldset>div {
-    margin-bottom: 1.125rem;
-}
-
 fieldset {
     border: none;
-    color: #666;
-    margin-bottom: 2rem;
     padding: 0;
 }
-
 
 span {
     margin-right: 1rem;
 }
 
-
-
 fieldset label:has(input[type="radio"]:checked) {
-    background-color: var(--hover);
-    color: #fff;
+    background-color: var(--orange);
+    color: var(--white);
 }
 
-
 input[type="submit"] {
-    background-color: var(--material-blue);
+    background-color: var(--orange);
     border: none;
     border-radius: 16px;
     color: #fff;
     cursor: pointer;
     margin: 1rem 0;
     padding: 1rem 1rem;
-     box-shadow: var(--box-shadow);
+    box-shadow: var(--box-shadow);
     width: 100%;
     transition: all 0.3s ease;
     text-transform: uppercase;
 }
 
 input[type="submit"]:hover {
-
-    background-color: var(--hover);
-    letter-spacing: 2px;
+    background-color: var(--dark-orange);
 }
 
 @media (min-width: 960px) {
