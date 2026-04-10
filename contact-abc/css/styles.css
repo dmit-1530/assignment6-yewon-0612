@@ -59,7 +59,7 @@ form input:not([type="radio"], [type="checkbox"], [type="submit"]),
 select,
 textarea {
     border: 1px solid var(--gray);
-    border-radius: 8px;
+    border-radius: .5rem;
     height: 3.3125rem;
     width: 100%;
     margin-bottom: 2rem;
