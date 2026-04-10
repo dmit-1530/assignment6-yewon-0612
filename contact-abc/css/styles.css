@@ -113,7 +113,7 @@ input[type="submit"] {
     background-color: var(--orange);
     border: none;
     border-radius: 16px;
-    color: #fff;
+    color: var(--white);
     cursor: pointer;
     padding: 1.125rem 0;
     box-shadow: var(--box-shadow);
@@ -131,7 +131,7 @@ input[type="submit"]:hover {
         gap: 2.5rem;
         margin: 3rem 0;
     }
-    
+
     h2 {
         margin-top: 0;
     }
