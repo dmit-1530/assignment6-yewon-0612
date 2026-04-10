@@ -1,3 +1,9 @@
+:root {
+    --orange: #CB4E0B;
+    --white:#FFFFFF;
+    --gray:#C1C4C8
+}
+
 body {
     background-color: #F2F6FA;
     font-family: "Noto Sans Bhaiksuki", sans-serif;
@@ -6,3 +12,7 @@ body {
 .container {
     padding: 0 1rem;
 }
+
+
+
+
