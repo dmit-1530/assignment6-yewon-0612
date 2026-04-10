@@ -1,12 +1,13 @@
 :root {
     --orange: #CB4E0B;
-    --white:#FFFFFF;
-    --gray:#C1C4C8
+    --white: #FFFFFF;
+    --gray: #C1C4C8
 }
 
 body {
     background-color: #F2F6FA;
     font-family: "Noto Sans Bhaiksuki", sans-serif;
+    line-height: 1.5;
 }
 
 .container {
@@ -16,7 +17,6 @@ body {
 h2 {
     font-size: 1.75rem;
     font-weight: 700;
-    line-height: 1.5;
     border-left: .3125rem solid var(--orange);
     border-bottom: .1875rem solid var(--orange);
     width: max-content;
@@ -25,4 +25,39 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+p {
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
 
+legend {
+    margin-bottom: .5rem;
+}
+
+header {
+    flex-basis: clamp(18rem, 30ch, 18rem);
+    flex-grow: 1;
+}
+
+form {
+    background-color: var(--white);
+    border-radius: 8px;
+    padding: .75rem 1rem;
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 16rem;
+}
+
+form div {
+    margin-bottom: 2rem;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: 2.5rem;
+}
